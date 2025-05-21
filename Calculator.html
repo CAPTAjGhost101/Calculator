@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- ✅ Use this instead of the script tag -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="w-full min-h-screen bg-zinc-900 flex justify-center items-center">
+      <div class="calculator w-[250px] h-auto py-2 px-2 bg-gray-300 outline-1 outline-gray-500 rounded-md shadow-lg shadow-black flex flex-col gap-6">
+        <section class="logo text-center">CALCULATOR</section>
+        <section>
+          <div class="flex flex-col-reverse w-full min-h-32 text-3xl p-2 text-right bg-gray-100 rounded-md shadow-inner break-words whitespace-normal overflow-y-auto" id="display" style="font-family: 'Share Tech Mono', monospace">0</div>
+        </section>
+        <section class="buttons grid grid-rows-5 grid-cols-4">
+          <button class="bg-gray-200 shadow-lg p-2" data-value="C">CE</button>
+          <button class="bg-gray-200 shadow-lg p-2 flex justify-center items-center" data-value="Cut">
+            <img src="./Assets/backspace-svgrepo-com.svg" alt="backspace" class="w-6" />
+          </button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="%">%</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="/">/</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="7">7</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="8">8</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="9">9</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="X">X</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="4">4</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="5">5</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="6">6</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="-">-</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="1">1</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="2">2</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="3">3</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="+">+</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="MT"></button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="0">0</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value=".">.</button>
+          <button class="bg-gray-200 shadow-lg p-2" data-value="=">=</button>
+        </section>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
